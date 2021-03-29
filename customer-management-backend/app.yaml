@@ -3,3 +3,9 @@ env: flex
 service: customer-management-backend
 manual_scaling:
   instances: 1
+network:
+  instance_tag: customer-management-backend
+  name: LakesideMutual
+  session_affinity: true
+  forwarded_ports:
+    - 8100:8100
