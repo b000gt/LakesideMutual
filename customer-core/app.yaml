@@ -5,7 +5,7 @@ manual_scaling:
   instances: 1
 network:
   instance_tag: customer-core
-  name: lakeside-mutual
+  name: default
   session_affinity: true
   forwarded_ports:
     - 8110:8110
