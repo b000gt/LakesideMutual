@@ -8,4 +8,5 @@ network:
   name: default
   session_affinity: true
   forwarded_ports:
-    - 8080:80
+    - 8220:8220
+    - 80:8220
