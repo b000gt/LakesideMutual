@@ -1,2 +1,5 @@
 runtime: custom
 env: flex
+service: customer-management-backend
+manual_scaling:
+  instances: 1
