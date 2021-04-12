@@ -9,7 +9,7 @@ RUN npm run build
 FROM nginx:stable-alpine
 COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /usr/src/app/build /usr/share/nginx/html
-EXPOSE 8220
+EXPOSE 8080
 WORKDIR /usr/share/nginx/html
 
 RUN apk add --no-cache nodejs npm

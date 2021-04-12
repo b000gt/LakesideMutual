@@ -9,5 +9,5 @@ COPY --from=build /usr/src/app/target/dependency/BOOT-INF/lib/* /app/lib/
 COPY --from=build /usr/src/app/target/dependency/META-INF /app/META-INF
 COPY --from=build /usr/src/app/target/dependency/BOOT-INF/classes /app
 
-EXPOSE 8110
+EXPOSE 8080
 ENTRYPOINT ["java","-cp","app:app/lib/*","com.lakesidemutual.customercore.CustomerCoreApplication"]

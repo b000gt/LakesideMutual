@@ -3,10 +3,3 @@ env: flex
 service: customer-management-frontend
 manual_scaling:
   instances: 1
-network:
-  instance_tag: customer-management-frontend
-  name: default
-  session_affinity: true
-  forwarded_ports:
-    - 8220:8220
-    - 80:8220
