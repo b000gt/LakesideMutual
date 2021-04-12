@@ -134,6 +134,10 @@
 			<version>5.2.4.RELEASE</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifact>mysql-connector-java</artifact>
+		</dependency>
 	</dependencies>
 
 	<build>
